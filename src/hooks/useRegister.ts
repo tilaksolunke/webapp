@@ -3,7 +3,7 @@ import { Profile } from "../model/Profile";
 import { createProfile } from "../services/auth-service";
 
 export const useRegister = () => {
-  const [error] = useState<string>("");
+  const [error, setError] = useState<string>("");
   const [isLoading, setLoader] = useState<boolean>(false);
   const [toast, setToast] = useState<string>("");
   const signup = (profile:Profile) =>{
@@ -14,7 +14,7 @@ export const useRegister = () => {
           setToast("Profile is successfully created.")
         }
       })
-      .catch((error) => console.log(error))
+      .catch((error) => setError(error.message))
       .finally(() => setLoader(false));
   }
   return { signup, error, isLoading, toast };
