@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+📌 Expense Manager Pro – Personal Finance Tracker
+A full-stack web application to help users manage and track their daily expenses with ease. Built using React (TypeScript) for the frontend and Spring Boot for the backend, the app features secure authentication, responsive UI, and real-time data handling through REST APIs.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Tech Stack:
+Frontend: React (TypeScript), Vite, Formik, Yup, Axios, Tailwind CSS
 
-Currently, two official plugins are available:
+Backend: Spring Boot, Spring Security, JWT, MySQL, JPA/Hibernate
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+API Testing: Postman
 
-## Expanding the ESLint configuration
+Build Tools: Maven
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+IDE/Tools: VS Code, IntelliJ IDEA
 
-- Configure the top-level `parserOptions` property like this:
+💡 Key Features:
+🔐 User Authentication: Secure login & registration using JWT and Spring Security
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+📊 Expense Management: Add, edit, delete, and filter daily expenses
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+📈 Dynamic Reports: View categorized summaries of spending
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+✅ Form Validation: Real-time input validation using Formik + Yup
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+💾 MySQL Integration: Persistent storage via JPA/Hibernate ORM
+
+📱 Responsive Design: Clean UI with fully responsive layout
